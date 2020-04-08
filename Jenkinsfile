@@ -12,8 +12,9 @@ pipeline {
             
 
             
-        } //stages
-        
+        } //stage
+
+
         stage("Run helloworld") {
             steps {
                 sh """
@@ -23,13 +24,7 @@ pipeline {
             } //steps
 
 
-        } //stage
-        stage("Run game.py") {
-            steps {
-                sh """
-                    python game.py
-                """
-            } //steps
+        
         } //stage
     } //stages   
 } //pipeline
